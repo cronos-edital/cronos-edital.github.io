@@ -322,7 +322,7 @@
       <h1>Organize seu edital.<br><em>Evolua</em> seus estudos.</h1>
       <p class="lede">Cronos Edital transforma qualquer edital de concurso público em um plano de estudo prático: matérias, cronograma, sessões cronometradas, simulados e revisão espaçada — tudo em um único app, sem depender de planilhas.</p>
       <div class="hero-actions">
-        <a class="btn-download" id="hero-download" href="https://github.com/henriquecof/cronos-edital-downloads/releases/latest/download/cronoseditais.apk">
+        <a class="btn-download" id="hero-download" href="https://github.com/cronos-edital/cronos-edital-downloads/releases/latest/download/cronoseditais.apk">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>
           Baixar APK agora
         </a>
@@ -452,7 +452,7 @@
         <h2>Baixe sempre a build mais recente</h2>
         <p class="lead">O botão abaixo aponta para o pacote assinado da última versão publicada. Cada atualização do app republica este mesmo link — não é preciso guardar favoritos de versão.</p>
         <div class="hero-actions">
-          <a class="btn-download" id="panel-download" href="https://github.com/henriquecof/cronos-edital-downloads/releases/latest/download/cronoseditais.apk">
+          <a class="btn-download" id="panel-download" href="https://github.com/cronos-edital/cronos-edital-downloads/releases/latest/download/cronoseditais.apk">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>
             Baixar cronoseditais.apk
           </a>
@@ -494,14 +494,13 @@
       document.getElementById('meta-size-2').textContent = sizeMb;
       document.getElementById('meta-sha').textContent = data.sha256;
 
-      const url = data.downloadUrl || 'https://github.com/henriquecof/cronos-edital-downloads/releases/latest/download/cronoseditais.apk';
+      const url = data.downloadUrl || 'https://github.com/cronos-edital/cronos-edital-downloads/releases/latest/download/cronoseditais.apk';
       document.getElementById('hero-download').href = url;
       document.getElementById('panel-download').href = url;
     })
     .catch(() => {
-      // version.json ausente ou inválido: os links estáticos para
-      // /downloads/cronoseditais.apk continuam funcionando, só sem o
-      // detalhe de versão/tamanho/checksum na tela.
+      // Sem version.json, o link estático da última GitHub Release funciona,
+      // mas os detalhes de versão/tamanho/checksum não são exibidos.
     });
 
 </script>

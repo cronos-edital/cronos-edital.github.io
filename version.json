@@ -1,9 +1,9 @@
 {
-  "version": "1.0.38",
-  "tag": "v1.0.38",
-  "releasedAt": "2026-10-15T22:28:41.529Z",
+  "version": "1.0.39",
+  "tag": "v1.0.39",
+  "releasedAt": "2026-10-23T18:16:51Z",
   "sizeBytes": 69797394,
-  "sha256": "1595472a8e4b33fed597fa1ab66e3c1afd3895e9c2ee215d833636ebf89e0f13",
+  "sha256": "63b85237a262f9596dc8f928ab03d16030fffb96a593d414427b4f99685800f9",
   "filename": "cronoseditais.apk",
   "downloadUrl": "https://github.com/cronos-edital/cronos-edital-downloads/releases/latest/download/cronoseditais.apk"
 }
